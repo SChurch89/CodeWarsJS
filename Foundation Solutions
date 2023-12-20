@@ -16,3 +16,14 @@ Solution 4
 function DNAtoRNA(dna) {
   return dna.replaceAll('T','U');
 }
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+var find_average = (array) => {  
+  return array.length === 0 ? 0 : array.reduce((acc, ind)=> acc + ind, 0)/array.length
+}
+This is a single return statement that calculates the average of the numbers in the input array.
+
+array.length === 0 ? 0 : ...: This part is a ternary conditional operator (? :) that checks if the length of the input array is equal to 0. If the array is empty (length is 0), it returns 0 immediately, which handles the case of an empty array and returns 0 as specified.
+
+array.reduce((acc, ind) => acc + ind, 0): This part calculates the sum of all elements in the array using the reduce() method. The reduce() method iterates through the array and accumulates a running sum (acc) by adding each element (ind) to it. The 0 at the end is the initial value of acc, so the summation starts from 0.
+
+/ array.length: After calculating the sum of the elements, this part divides the sum by the length of the array to obtain the average.
